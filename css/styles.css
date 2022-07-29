@@ -22,6 +22,10 @@ ul {
   padding-left: 0;
 }
 
+img {
+  display: block;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--primary-text-color);
@@ -35,11 +39,16 @@ body {
   padding-right: 15px;
   margin: 0 auto;
   outline: 2px solid red;
+}
+
+.header .container {
   display: flex;
+  align-items: center;
 }
 
 .header {
   padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo,
@@ -51,8 +60,6 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  outline: 2px solid red;
-  
 }
 
 .sub-logo {
@@ -67,7 +74,9 @@ body {
   margin-left: 93px;
 }
 
-
+.header-iteam {
+  margin-left: 50px;
+}
 
 .link {
   text-decoration: none;
@@ -85,6 +94,10 @@ body {
 
 .link.current {
   color: var(--accent-color);
+}
+
+.header-connect {
+  margin-left: auto;
 }
 
 .header-list .tel,
@@ -110,15 +123,27 @@ body {
 .hero {
   background-color: var(--secondary-bg-color);
 }
+.hero-container {
+  padding-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 280px;
+}
+
+.hero {
+  text-align: center;
+}
 
 .hero-title {
   color: var(--primary-bg-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  max-width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .hero-button {
@@ -130,16 +155,30 @@ body {
   letter-spacing: 0.06em;
   cursor: pointer;
   font-family: inherit;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 216px;
+  height: 50px;
 }
+
 .hero-button:hover,
 .hero-button:focus {
   background-color: #188ceb;
 }
 
 /*-------------------------- Feature section-------------------------- */
+.feature {
+  padding-top: 94px;
+  outline: 2px solid red;
+  padding-bottom: 94px;
+}
 
 .feature-list {
   list-style: none;
+  display: flex;
+}
+.feature-iteam:not(:last-child) {
+  margin-right: 30px;
 }
 
 .feature-title {
@@ -147,6 +186,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .feature-text {
@@ -158,9 +198,17 @@ body {
 }
 
 /*-------------------------- Work section-------------------------- */
+.work {
+  padding-bottom: 94px;
+  outline: 2px solid red;
+}
 
 .work-list {
   list-style: none;
+  display: flex;
+}
+.work-iteam:not(:last-child) {
+  margin-right: 30px;
 }
 
 .work-title {
@@ -169,12 +217,17 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 /* --------------------------team section-------------------------- */
 
 .team {
   background-color: var(--accent-color-2);
+  padding-top: 94px;
+  outline: 2px solid red;
+  padding-bottom: 94px;
+  text-align: center;
 }
 
 .team-title {
@@ -183,10 +236,24 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  outline: 2px solid red;
+  margin-bottom: 50px;
 }
 
 .team-list {
   list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.team-wrap {
+  padding-top: 30px;
+  outline: 2px solid red;
+  padding-bottom: 30px;
+}
+.team-iteam {
+  background-color: var(--primary-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-player {
@@ -204,12 +271,15 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 10px;
 }
 
 /*-------------------------- Footer-address section-------------------------- */
 
 .footer {
   background-color: var(--secondary-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-sub-logo {
@@ -219,6 +289,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 20px;
 }
 
 .footer-address {
@@ -227,6 +298,11 @@ body {
 
 .footer-list {
   list-style: none;
+  margin-top: 20px;
+}
+
+.footer-iteam:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .map-address {
